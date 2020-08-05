@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveData : MonoBehaviour
+public class SaveData
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    //public "int" "INTEGER"
 
-    // Update is called once per frame
-    void Update()
+
+    //public SaveData("Class""bsp",)
+    public SaveData()
     {
-        
+        //"INTERGER" = "bsp.health"
     }
 }
