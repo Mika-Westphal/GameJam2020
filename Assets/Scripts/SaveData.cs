@@ -6,7 +6,6 @@ public class SaveData
 {
     //public "int" "INTEGER"
 
-
     //public SaveData("Class""bsp",)
     public SaveData()
     {
