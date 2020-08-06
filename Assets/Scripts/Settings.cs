@@ -14,20 +14,20 @@ public class Settings : MonoBehaviour
 
     public void onMasterSlider(float volume)
     {
-        CurrentMasterValue.text = volume.ToString();
-        AudioController.setMasterVolume(volume / 100 * 80);
+        CurrentMasterValue.text = ((int) volume).ToString() + "%";
+        AudioController.setMasterVolume((volume / 100 * 80) - 80);
     }
 
     public void onMusicSlider(float volume)
     {
-        CurrentMusicValue.text = ((int)(volume / 100 * 80)).ToString();
-        AudioController.setMusicVolume(volume - 80);
+        CurrentMusicValue.text = ((int)volume).ToString() + "%";
+        AudioController.setMusicVolume((volume / 100 * 80) - 80);
     }
 
     public void onSFXSlider(float volume)
     {
-        CurrentSFXValue.text = ((int)(volume / 100 * 80)).ToString();
-        AudioController.setSFXVolume(volume - 80);
+        CurrentSFXValue.text = ((int)volume).ToString() + "%";
+        AudioController.setSFXVolume((volume / 100 * 80) - 80);
     }
 
     public void onBackClick()
